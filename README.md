@@ -1,36 +1,38 @@
-# API de Productos en Go
+# Products API in Go
 
-Esta es una API simple para la gestión de productos desarrollada en Go. Permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre productos.
+This is a simple API for managing products developed in Go. It allows performing CRUD (Create, Read, Update, Delete) operations on products.
 
-## Características
+## Features
 
-- Crear un nuevo producto con nombre, descripción, precio y cantidad en stock.
-- Obtener la lista de todos los productos.
-- Obtener un producto específico por su ID.
-- Actualizar la información de un producto existente.
-- Eliminar un producto por su ID.
+- Create a new product with name, description, price, and stock quantity.
+- Get the list of all products.
+- Get a specific product by its ID.
+- Update the information of an existing product.
+- Delete a product by its ID.
 
-## Uso
+## Usage
 
-### Instalación
+### Installation
 
-1. Clona este repositorio:
+1. Clone this repository:
 
 ```bash
 git clone https://github.com/tu_usuario/api-productos-go.git
 ```
 
-2. Clona este repositorio:
+2. Change directory to the project:
+
+```bash
+cd api-products-go
 ```
-cd api-productos-go
-```
-3. Instala las dependencias:
+
+3. Install dependencies:
 
 ```bash
 go mod tidy
 ```
-## Configuración
-Configura la base de datos en el archivo config/config.go. Actualiza los valores de conexión según tu entorno:
+## Configuration
+Configure the database in the config/config.go file. Update the connection values according to your environment:
 ```
 const (
     DBHost     = "localhost"
@@ -41,8 +43,8 @@ const (
 )
 ```
 
-## Ejecución
-Compila y ejecuta la aplicación:
+## Execution
+Compile and run the application:
 ```
 ./api-productos-go
 La API estará disponible en http://localhost:8080.
@@ -50,8 +52,8 @@ La API estará disponible en http://localhost:8080.
 
 
 ## Endpoints
-- GET /productos: Obtiene la lista de todos los productos.
-- GET /productos/{id}: Obtiene un producto específico por su ID.
-- POST /productos: Crea un nuevo producto.
-- PUT /productos/{id}: Actualiza la información de un producto existente.
-- DELETE /productos/{id}: Elimina un producto por su ID.
+- GET /products: Get the list of all products.
+- GET /products/{id}: Get a specific product by its ID.
+- POST /products: Create a new product.
+- PUT /products/{id}: Update the information of an existing product.
+- DELETE /products/{id}: Delete a product by its ID.
